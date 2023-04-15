@@ -32,7 +32,7 @@
           <a class="header-logo logo link" href="./index.html"
             >Web<span class="logo-studio">Studio</span></a
           >
-          <button class="header-burger js-open-menu">
+          <button type="button" class="header-burger" data-menu-open>
             <svg class="header-burger-icon" width="32" height="22">
               <use href="./images/symbol-defs.svg#icon-mobile-menu"></use>
             </svg>
@@ -65,6 +65,69 @@
             </li>
           </ul>
         </address>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-nav">
+        <button type="button" class="mob-close-btn" data-menu-close>
+          <svg class="mob-close-icon" width="8" height="8">
+          <use href="./images/symbol-defs.svg#icon-modal-close"></use>
+          </svg>
+          </button>
+        <ul class="mob-menu-list list">
+          <li class="mob-menu-item">
+          <a class="mob-menu-link link" href="./index.html">Studio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a class="mob-menu-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="">Contacts</a>
+              </li>
+        </ul>
+      </div>
+      <div class="mob-address-soc-wrap">
+        <address class="mob-address">
+        <ul class="mob-address-list list">
+          <li class="mob-address-item">
+            <a class="mob-address-tel link" href="tel:+110001111111">
+            +11 (000) 111-11-11</a>
+          </li>
+          <li class="mob-address-item">
+            <a class="mob-address-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+      </address>
+      <ul class="mob-soc-list list">
+        <li class="mob-soc-item">
+          <a href="" class="mob-soc-link link">
+            <svg class="team-soc-item" width="24" height="24">
+            <use href="./images/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="mob-soc-item">
+          <a href="" class="mob-soc-link link">
+            <svg class="team-soc-item" width="24" height="24">
+            <use href="./images/symbol-defs.svg#icon-twitter"></use>
+            </svg>
+          </a>
+          </li>
+          <li class="mob-soc-item">
+            <a href="" class="mob-soc-link link">
+              <svg class="team-soc-item" width="24" height="24">
+              <use href="./images/symbol-defs.svg#icon-facebook"></use>
+              </svg>
+            </a>
+            </li>
+            <li class="mob-soc-item">
+              <a href="" class="mob-soc-link link">
+                <svg class="team-soc-item" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+              </li>
+      </ul>
+    </div>
       </div>
     </header>
 
@@ -533,77 +596,9 @@
         </form>
       </div>
     </div>
-    <div class="mobile-menu is-hidden" data-mobil>
-      <div class="mobile-menu-container container js-menu-container"
-        id="mobile-menu"
-      >
-      <button class="menu-close-btn js-close-menu" type="button">
-        <svg class="menu-icon" width="8" height="8">
-          <use href="./images/symbol-defs.svg#icon-modal-close"></use>
-        </svg>
-      </button>
-          <div class="menu-container">
-          <nav class="mobile-nav">
-            <ul class="nav-mobile-list list">
-              <li class="nav-mobile-item">
-              <a href="./index.html" class="nav-mobile-link">Studio</a>
-              </li>
-              <li class="nav-mobile-item">
-              <a href="./portfolio.html" class="nav-mobile-link">Portfolio</a>
-              </li>
-              <li class="nav-mobile-item">
-              <a href="" class="nav-mobile-link">Contacts</a>
-              </li>
-              </ul>
-              <div class="address-mobile-wrap">
-              <address class="mobile-address">
-              <ul class="mobile-address-list list">
-              <li class="mobile-address-item">
-              <a href="tel:+110001111111" class="mobile-menu-tel link">+11 (000) 111-11-11</a>
-              </li>
-              <li class="mobile-address-item">
-                <a href="mailto:info@devstudio.com" class="mobile-menu-mail link">info@devstudio.com</a>
-              </li>
-              </ul>
-              </address>
-              <ul class="mobile-menu-social-list list">
-              <li class="mobile-menu-social-item">
-              <a href="" class="mobile-menu-social-link link">
-                <svg class="team-soc-item" width="24" height="24">
-                <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-              </li>
-              <li class="mobile-menu-social-item">
-                <a href="" class="mobile-menu-social-link link">
-                  <svg class="team-soc-item" width="24" height="24">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                  </svg>
-                </a>
-                </li>
-                <li class="mobile-menu-social-item">
-                  <a href="" class="mobile-menu-social-link link">
-                    <svg class="team-soc-item" width="24" height="24">
-                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                  </li>
-                  <li class="mobile-menu-social-item">
-                    <a href="" class="mobile-menu-social-link link">
-                      <svg class="team-soc-item" width="24" height="24">
-                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                      </svg>
-                    </a>
-                    </li>
-              </ul>
-          </nav>
-          </div>
-        </div>
-        
-      </div>
-      
-    </div>
+    
+    
     <script src="./js/modal.js"></script>
-    <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="./js/menu.js"></script>
   </body>
 </html>
