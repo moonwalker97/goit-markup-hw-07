@@ -113,10 +113,6 @@ p {
 /* Логотип */
 
 .header-logo {
-  margin-right: 76px;
-}
-
-.header-logo {
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -384,8 +380,6 @@ color: var(--body-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  top: 50%;
-  left: 50%;
   transform: translate(-50%, -50%) scaleY(1);
   transition: var(--transition);
 }
@@ -1216,6 +1210,7 @@ color: var(--body-color);
     justify-content: start;
     flex-wrap: wrap;
     row-gap: 72px;
+    column-gap: 24px;
   }
   .footer-logo-container {
     width: 264px;
