@@ -32,12 +32,8 @@
           <a class="header-logo logo link" href="./index.html"
             >Web<span class="logo-studio">Studio</span></a
           >
-
-          <button
-            class="menu-btn js-open-menu"
-            aria-expanded="false"
-          >
-            <svg class="mobile-menu-icon" width="32" height="22">
+          <button class="header-burger js-open-menu">
+            <svg class="header-burger-icon" width="32" height="22">
               <use href="./images/symbol-defs.svg#icon-mobile-menu"></use>
             </svg>
           </button>
@@ -70,70 +66,6 @@
           </ul>
         </address>
       </div>
-      <div class="mobile-menu js-menu-container">
-      <div class="mobile-menu-container mobile-menu-width">
-      <button class="menu-close-btn js-close-menu" type="button">
-      <svg class="menu-icon" width="8" height="8">
-      <use href="./images/symbol-defs.svg#icon-modal-close"></use>
-      </svg>
-      </button>
-      <div class="menu-container">
-      <ul class="nav-mobile-list list">
-      <li class="nav-mobile-item">
-      <a href="./index.html" class="nav-mobile-link">Studio</a>
-      </li>
-      <li class="nav-mobile-item">
-      <a href="./portfolio.html" class="nav-mobile-link">Portfolio</a>
-      </li>
-      <li class="nav-mobile-item">
-      <a href="" class="nav-mobile-link">Contacts</a>
-      </li>
-      </ul>
-      <div class="address-mobile-wrap">
-      <address class="mobile-address">
-      <ul class="address-list list">
-      <li class="mobile-address-item">
-      <a href="tel:+110001111111" class="mobile-menu-tel link">+11 (000) 111-11-11</a>
-      </li>
-      <li class="mobile-address-item">
-        <a href="mailto:info@devstudio.com" class="mobile-menu-mail link">info@devstudio.com</a>
-      </li>
-      </ul>
-      </address>
-      <ul class="mobile-menu-social-list list">
-      <li class="mobile-menu-social-item">
-      <a href="" class="mobile-menu-social-link link">
-        <svg class="team-soc-item" width="24" height="24">
-        <use href="./images/symbol-defs.svg#icon-instagram"></use>
-        </svg>
-      </a>
-      </li>
-      <li class="mobile-menu-social-item">
-        <a href="" class="mobile-menu-social-link link">
-          <svg class="team-soc-item" width="24" height="24">
-          <use href="./images/symbol-defs.svg#icon-twitter"></use>
-          </svg>
-        </a>
-        </li>
-        <li class="mobile-menu-social-item">
-          <a href="" class="mobile-menu-social-link link">
-            <svg class="team-soc-item" width="24" height="24">
-            <use href="./images/symbol-defs.svg#icon-facebook"></use>
-            </svg>
-          </a>
-          </li>
-          <li class="mobile-menu-social-item">
-            <a href="" class="mobile-menu-social-link link">
-              <svg class="team-soc-item" width="24" height="24">
-              <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-            </li>
-      </ul>
-      </div>
-      </div>
-      </div>
-      </div>
     </header>
 
     <main>
@@ -145,7 +77,7 @@
       </section>
 
       <section class="section">
-        <div class="container">
+        <div class="about-container container">
           <h2 class="visually-hidden">About</h2>
           <ul class="about-list list">
             <li class="about-item">
@@ -238,6 +170,7 @@
           <ul class="team-list list">
             <li class="team-item">
               <img
+              srcset="./images/card1.jpg 1x, ./images/card1-2x.jpg 2x"
                 src="./images/card1.jpg"
                 alt="Team Card 1"
                 width="264"
@@ -286,6 +219,7 @@
             </li>
             <li class="team-item">
               <img
+              srcset="./images/card2.jpg 1x, ./images/card2-2x.jpg 2x"
                 src="./images/card2.jpg"
                 alt="Team Card 2"
                 width="264"
@@ -334,6 +268,7 @@
             </li>
             <li class="team-item">
               <img
+              srcset="./images/card3.jpg 1x, ./images/card3-2x.jpg 2x"
                 src="./images/card3.jpg"
                 alt="Team Card 3"
                 width="264"
@@ -382,6 +317,7 @@
             </li>
             <li class="team-item">
               <img
+              srcset="./images/card4.jpg 1x, ./images/card4-2x.jpg 2x"
                 src="./images/card4.jpg"
                 alt="Team Card 4"
                 width="264"
@@ -432,7 +368,7 @@
         </div>
       </section>
       <section class="customers-section">
-        <div class="container">
+        <div class="container customers-container">
           <h2 class="customers-title">Customers</h2>
           <ul class="customers-list">
             <li class="customers-item">
@@ -528,14 +464,12 @@
         <div class="footer-subscribe">
           <p class="subscribe-title">Subscribe</p>
           <form class="subscribe-form">
-            <label class="subscribe-label">
-              <input
-                class="subscribe-input"
-                type="email"
-                name="email"
-                placeholder="E-mail"
-              />
-            </label>
+            <input
+              class="subscribe-input"
+              type="email"
+              name="email"
+              placeholder="E-mail"
+            />
             <button class="subscribe-btn" type="submit">
               Subscribe
               <svg class="subscribe-icon" width="24" height="24">
@@ -577,47 +511,99 @@
             <div class="modal-input-wrapper">
               <label class="modal-label" for="email">Email</label>
               <div class="modal-input-container">
-                <input
-                  class="modal-input"
-                  type="email"
-                  name="email"
-                  id="email"
-                />
+                <input class="modal-input" type="email" name="email" id="email" />
                 <svg class="modal-input-icon" width="18" height="24">
                   <use href="./images/symbol-defs.svg#icon-email"></use>
                 </svg>
               </div>
-            </div>
-            <div class="modal-input-wrapper">
-              <label class="modal-label">Comment</label>
-              <textarea
-                name="comment"
-                class="modal-textarea"
-                placeholder="Text input"
-              ></textarea>
-            </div>
           </div>
-          <label class="modal-policy-label">
-            <input class="policy-input" type="checkbox" name="policy" />
-            <span class="policy-checkbox"></span>
-            <span class="modal-policy-text"
-              >I accept the terms and conditions of the
-              <a href class="modal-policy-link" target="_blank"
-                >Privacy Policy</a
-              >
-            </span>
-          </label>
-          <button class="modal-send-btn" type="submit">Send</button>
+          <div class="modal-input-wrapper">
+            <label class="modal-label">Comment</label>
+            <textarea name="comment" class="modal-textarea" placeholder="Text input"></textarea>
+          </div>
+        </div>
+        <label class="modal-policy-label">
+          <input class="policy-input" type="checkbox" name="policy">
+          <span class="policy-checkbox"></span>
+          <span class="modal-policy-text">I accept the terms and conditions of the 
+            <a href class="modal-policy-link" target="_blank">Privacy Policy</a>
+          </span>
+        </label>
+        <button class="modal-send-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
+    <div class="mobile-menu is-hidden" data-mobil>
+      <div class="mobile-menu-container container js-menu-container"
+        id="mobile-menu"
+      >
+      <button class="menu-close-btn js-close-menu" type="button">
+        <svg class="menu-icon" width="8" height="8">
+          <use href="./images/symbol-defs.svg#icon-modal-close"></use>
+        </svg>
+      </button>
+          <div class="menu-container">
+          <nav class="mobile-nav">
+            <ul class="nav-mobile-list list">
+              <li class="nav-mobile-item">
+              <a href="./index.html" class="nav-mobile-link">Studio</a>
+              </li>
+              <li class="nav-mobile-item">
+              <a href="./portfolio.html" class="nav-mobile-link">Portfolio</a>
+              </li>
+              <li class="nav-mobile-item">
+              <a href="" class="nav-mobile-link">Contacts</a>
+              </li>
+              </ul>
+              <div class="address-mobile-wrap">
+              <address class="mobile-address">
+              <ul class="mobile-address-list list">
+              <li class="mobile-address-item">
+              <a href="tel:+110001111111" class="mobile-menu-tel link">+11 (000) 111-11-11</a>
+              </li>
+              <li class="mobile-address-item">
+                <a href="mailto:info@devstudio.com" class="mobile-menu-mail link">info@devstudio.com</a>
+              </li>
+              </ul>
+              </address>
+              <ul class="mobile-menu-social-list list">
+              <li class="mobile-menu-social-item">
+              <a href="" class="mobile-menu-social-link link">
+                <svg class="team-soc-item" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
+              </li>
+              <li class="mobile-menu-social-item">
+                <a href="" class="mobile-menu-social-link link">
+                  <svg class="team-soc-item" width="24" height="24">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+                </li>
+                <li class="mobile-menu-social-item">
+                  <a href="" class="mobile-menu-social-link link">
+                    <svg class="team-soc-item" width="24" height="24">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                  </li>
+                  <li class="mobile-menu-social-item">
+                    <a href="" class="mobile-menu-social-link link">
+                      <svg class="team-soc-item" width="24" height="24">
+                      <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                    </li>
+              </ul>
+          </nav>
+          </div>
+        </div>
+        
+      </div>
+      
+    </div>
     <script src="./js/modal.js"></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous"
-    ></script>
-    <script defer src="js/mobile-menu.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
