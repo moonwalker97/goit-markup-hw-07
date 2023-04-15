@@ -1154,6 +1154,9 @@ color: var(--body-color);
     justify-content: flex-start;
     padding: 0;
   }
+  .header-logo {
+    margin-right: 120px;
+  }
   .header-list {
     display: flex;
   }
